@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" style="max-width: 1200px;">
     <h1 class="title">CRUD</h1>
     <ul class="menu">
         <li><a href="http://localhost/crud/php_program/index.php">Home</a></li>
