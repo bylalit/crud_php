@@ -7,31 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <?php require "header.php" ?>
 
     <div class="container">
-
-        <h1 class="title">CRUD</h1>
-        <ul class="menu">
-            <li><a href="/php_program/index.html">Home</a></li>
-            <li><a href="/php_program/add.html">ADD</a></li>
-            <li><a href="/php_program/update.html">update</a></li>
-            <li><a href="/php_program/delete.html">delete</a></li>
-        </ul>
-
-
+        
         <div class="hero">
-            <h2 class="menu_title">Edit Record</h2>
+            <h2 class="menu_title">Add New Record</h2>
 
             <div class="box">
                 <form action="" method="post">
-
-                    <div class="sid">
-                        <label for="sid">Id</label>
-                        <input type="text" id="sid" name="sid" required>
-                    </div>
-
-                    <button type="submit" id="btn">SHOW</button>
-
                     <div class="sname">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -53,10 +38,9 @@
                         <label for="phone">Phone</label>
                         <input type="text" id="phone" name="phone" required>
                     </div>
-                    <button type="submit">UPDATE</button>
+                    <button type="submit">SAVE</button>
                 </form>
             </div>
-
         </div>
 
     </div>
