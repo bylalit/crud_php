@@ -9,8 +9,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
+.header{
+    width: 100%;
+}
 
 .container{
     width: 100%;

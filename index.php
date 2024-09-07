@@ -7,18 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <?php require "header.php" ?>
 
     <div class="container">
-        <h1 class="title">CRUD</h1>
-        <ul class="menu">
-            <li><a href="/php_program/index.html">Home</a></li>
-            <li><a href="/php_program/add.html">ADD</a></li>
-            <li><a href="/php_program/update.html">update</a></li>
-            <li><a href="/php_program/delete.html">delete</a></li>
-        </ul>
-
-
+        
         <div class="hero">
             <h2 class="menu_title">All Records</h2>
             <table>
