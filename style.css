@@ -82,4 +82,9 @@ table tr td button{
     color: white;
     font-weight: bold;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+table tr td button.del{
+    background-color: red;
 }
