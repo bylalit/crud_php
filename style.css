@@ -91,15 +91,69 @@ table tr td button.del{
 
 
 .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    /* max-width: 1400px; */
+    width: 500px;
+    background-color: rgb(220, 246, 221);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
-form{
+/* form{
+    /* display: inline-block; */
+    /* display: flex; */
+    /* flex-direction: column; */
+/* } */ 
+
+/* form label{
+    font-size: 1.3rem;
+    width: 50%;
+}
+form input{
+    width: 50%;
+    margin-left: 30%;
+}
+form select{
+    width: 50%;
+    margin-left: 30%;
+} */
+
+
+/* form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* flex-direction: column;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input {
+    margin-bottom: 10px;
+  } */
+   
+
+
+label {
+    display: inline-block;
+    width: 100px; 
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+
+input {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 60%;
+    padding: 3px 10px;
+    outline: none;
+    border: 2px solid gray;
+}
+
+form select{
+    padding: 3px 0;
+    width: 60%;
+    display: inline-block;
+    margin-bottom: 10px;
 }
