@@ -90,3 +90,16 @@ table tr td button.del{
 }
 
 
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /* max-width: 1400px; */
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
