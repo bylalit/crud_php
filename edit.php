@@ -30,7 +30,7 @@
                     while($row = mysqli_fetch_assoc($result)){
             ?>
 
-                <form action="" method="post">
+                <form action="change.php" method="post">
 
                     <div class="sname">
                         <label for="name">Name</label>
@@ -49,7 +49,7 @@
                             <option value="3">B.TECH</option>
                         </select> -->
                         <?php
-                        
+
                             $sql1 = "SELECT * FROM studentclass";
 
                             $result1 = mysqli_query($conn, $sql1) or die("Query Unsuccessful");
