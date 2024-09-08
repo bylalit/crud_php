@@ -16,7 +16,7 @@
             <h2 class="menu_title">Add New Record</h2>
 
             <div class="box">
-                <form action="" method="post">
+                <form action="savedata.php" method="post">
                     <div class="sname">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
