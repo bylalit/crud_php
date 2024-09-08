@@ -10,6 +10,16 @@
 
     <?php require "header.php" ?>
 
+    <?php
+        $conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
+        
+        $sql = "SELECT * FROM student JOIN studentclass  WHERE student.sclass = studentclass.cid";
+
+        $result = mysqli_query($conn, $sql) or die("Query Unsuccessful.");
+        
+        if(mysqli_num_rows($result) > 0){
+    ?>
+
     <div class="container">
         
         <div class="hero">
@@ -24,62 +34,27 @@
                     <th>phone</th>
                     <th>action</th>
                 </tr>
-
+            <?php
+                while($row = mysqli_fetch_assoc($result)){
+            ?>
                 <tr>
-                    <td>1</td>
-                    <td>Ramesh</td>
-                    <td>Delhi</td>
-                    <td>BCA</td>
-                    <td>125841523</td>
+                    <td><?php echo $row['sid']; ?></td>
+                    <td><?php echo $row['sname']; ?></td>
+                    <td><?php echo $row['saddress']; ?></td>
+                    <td><?php echo $row['cname']; ?></td>
+                    <td><?php echo $row['sphone']; ?></td>
                     <td><button>Edit</button><button class="del">Delete</button></td>
                 </tr>
 
-                <tr>
-                    <td>2</td>
-                    <td>Rakesh</td>
-                    <td>Surat</td>
-                    <td>Bcom</td>
-                    <td>564875854</td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
-                </tr>
-
-                <tr>
-                    <td>3</td>
-                    <td>Vidhi</td>
-                    <td>Ahemdhabad</td>
-                    <td>BCA</td>
-                    <td>487956875</td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
-                </tr>
-
-                <tr>
-                    <td>4</td>
-                    <td>Lalit</td>
-                    <td>Dubai</td>
-                    <td>Btach</td>
-                    <td>8200487931</td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
-                </tr>
-
-                <tr>
-                    <td>5</td>
-                    <td>Mittal</td>
-                    <td>Delhi</td>
-                    <td>BCA</td>
-                    <td>457898567</td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
-                </tr>
-
-                <tr>
-                    <td>6</td>
-                    <td>Sid</td>
-                    <td>Usa</td>
-                    <td>BBa</td>
-                    <td>568974852</td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
-                </tr>
+            <?php } ?>
 
             </table>
+
+            <?php } else{
+                echo "<h2>No records found</h2>";
+            }
+            mysqli_close($conn) 
+            ?>
         </div>
         
 
