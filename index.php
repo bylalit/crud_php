@@ -43,7 +43,7 @@
                     <td><?php echo $row['saddress']; ?></td>
                     <td><?php echo $row['cname']; ?></td>
                     <td><?php echo $row['sphone']; ?></td>
-                    <td><button>Edit</button><button class="del">Delete</button></td>
+                    <td><button><a href="http://localhost/crud/php_program/edit.php?id=<?php echo $row['sid']; ?>" style="text-decoration: none; color:white;">Edit</a></button><button class="del">Delete</button></td>
                 </tr>
 
             <?php } ?>
