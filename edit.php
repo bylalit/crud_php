@@ -34,6 +34,7 @@
 
                     <div class="sname">
                         <label for="name">Name</label>
+                        <input type="hidden" name="sid" value="<?php echo $row['sid']; ?>">
                         <input type="text" id="name" name="name" value="<?php echo $row['sname']; ?>" required>
                     </div>
                     <div class="saddress">
@@ -57,7 +58,7 @@
                             // $result1 = mysqli_query($conn, $sql1) or die("Query Unsuccessful");
 
                             if(mysqli_num_rows($result1) > 0){
-                                echo '<select name = "sclass">';
+                                echo '<select name = "class">';
                                 while($row1 = mysqli_fetch_assoc($result1)){
                                     if($row['sclass'] == $row1['cid']){
                                         $select = "selected";
