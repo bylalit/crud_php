@@ -13,7 +13,7 @@
     <div class="container">
 
         <div class="hero">
-            <h2 class="menu_title">Edit Record</h2>
+            <!-- <h2 class="menu_title">Edit Record</h2>
 
             <div class="box">
 
@@ -28,7 +28,7 @@
                 
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_assoc($result)){
-            ?>
+            ?> -->
 
                 <form action="change.php" method="post">
 
