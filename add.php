@@ -23,7 +23,7 @@
 
                 while($row = mysqli_fetch_assoc($result)){
             ?> 
-                <option value="1">BCA</option>
+                <option value="<?php echo $row['cid']; ?>"><?php echo $row['cname']; ?></option>
             <?php } ?>
 
             </select>
