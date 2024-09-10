@@ -13,10 +13,19 @@
         <div class="form-group">
             <label>Class</label>
             <select name="class">
-                <option value="" selected disabled>Select Class</option>
+
+            <option value="" selected disabled>Select Class</option>
+            <?php 
+
+                $conn = mysqli_connect("localhost","root","","crud") or die("Query  failed!");
+                $sql = "SELECT * FROM studentclass";
+                $result = mysqli_query($conn, $sql) or die("Query Failed!");
+
+                while($row = mysqli_fetch_assoc($result)){
+            ?> 
                 <option value="1">BCA</option>
-                <option value="2">BSC</option>
-                <option value="3">B.TECH</option>
+            <?php } ?>
+
             </select>
         </div>
         <div class="form-group">

@@ -8,7 +8,7 @@ include 'header.php';
     $conn = mysqli_connect("localhost","root","","crud") or die("Query  failed!");
     $sql = "SELECT * FROM student";
     $result = mysqli_query($conn, $sql) or die("Query Failed!");
-    
+    // echo $rows = mysqli_num_rows($result);
     if($rows = mysqli_num_rows($result) > 0){
     ?>
     <table cellpadding="7px">
