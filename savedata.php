@@ -1,9 +1,9 @@
 <?php
 
-$sname = $_POST['sname'];
-$saddress = $_POST['saddress'];
-$sclass = $_POST['sclass'];
-$sphone = $_POST['sphone'];
+echo $sname = $_POST['sname'];
+echo $saddress = $_POST['saddress'];
+echo $sclass = $_POST['class'];
+echo $sphone = $_POST['sphone'];
 
 $conn = mysqli_connect("localhost","root","","crud") or die("qury  failed");
 

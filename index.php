@@ -5,11 +5,13 @@ include 'header.php';
     <h2>All Records</h2>
     <?php 
 
-    $conn = mysqli_connect("localhost","root","","crud") or die("Query  failed!");
-    $sql = "SELECT * FROM student";
-    $result = mysqli_query($conn, $sql) or die("Query Failed!");
-    // echo $rows = mysqli_num_rows($result);
-    if($rows = mysqli_num_rows($result) > 0){
+        $conn = mysqli_connect("localhost","root","","crud") or die("Query  failed!");
+
+        $sql = "SELECT * FROM student JOIN studentclass WHERE student.sclass = studentclass.cid";
+
+        $result = mysqli_query($conn, $sql) or die("Query Failed!");
+
+        if($rows = mysqli_num_rows($result) > 0){
     ?>
     <table cellpadding="7px">
         <thead>
@@ -29,7 +31,7 @@ include 'header.php';
                 <td><?php echo $row['sid']; ?></td>
                 <td><?php echo $row['sname']; ?></td>
                 <td><?php echo $row['saddress']; ?></td>
-                <td><?php echo $row['sclass']; ?></td>
+                <td><?php echo $row['cname']; ?></td>
                 <td><?php echo $row['sphone']; ?></td>
                 <td>
                     <a href='edit.php'>Edit</a>
