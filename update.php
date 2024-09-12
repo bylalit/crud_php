@@ -32,7 +32,7 @@
             <label>Phone</label>
             <input type="text" name="sphone" value="" />
         </div>
-    <input class="submit" type="submit" value="Update"  />
+    <input class="submit" type="submit" value="Update" />
     </form>
 </div>
 </div>
